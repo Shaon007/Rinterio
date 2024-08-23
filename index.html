@@ -8,21 +8,29 @@
   <!-- Daisy pluggin -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
-
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-  <header class="w-full bg-slate-200">
+<body class="manrope max-w-[1440px] mx-auto">
+  <header class="w-full  bg-gradient-to-b from-slate-200 to-white">
     <div class="container  mx-auto w-full">
       <div class="navbar ">
         <div class="navbar-start lg:w-1/3 ml-10 ">
 
           <img class="w-7 mr-2  bg-green-400 rounded-full p-1 -rotate-45" src="./assets/right-arrows.png" alt="">
-          <a class="font-bold text-xl">Rinterio</a>
+          <a class="font-bold text-xl lg:text-2xl">Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
+            <li><a class="font-bold">Home</a></li>
             <li><a>Services</a></li>
             <li><a>Portfolio</a></li>
             <li><a>Blogs</a></li>
@@ -31,36 +39,47 @@
         </div>
         <div class="navbar-end space-x-4 ">
           <!-- search icon -->
-          <?xml version="1.0" ?>
-          <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="w-7 bg-white rounded-full p-1 "
-            id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px"
-            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path
-              d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2  s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3  s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3  c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z" />
-          </svg>
-        <!-- cart icon -->
-          <?xml version="1.0" ?><svg class="w-7 bg-white rounded-full p-1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-            <rect fill="none" height="256" width="256" />
-            <path d="M184,184H69.8L41.9,30.6A8,8,0,0,0,34.1,24H16" fill="none" stroke="#000" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="8" />
-            <circle cx="80" cy="204" fill="none" r="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="8" />
-            <circle cx="184" cy="204" fill="none" r="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="8" />
-            <path d="M62.5,144H188.1a15.9,15.9,0,0,0,15.7-13.1L216,64H48" fill="none" stroke="#000" stroke-linecap="round"
-              stroke-linejoin="round" stroke-width="8" />
-          </svg>
-
-          <a class="btn rounded-3xl bg-green-400 font-bold ">Book Consult <?xml version="1.0" ?><svg class="w-6 font-bold fill-white bg-black rounded-full p-1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <title />
-            <g data-name="Layer 2" id="Layer_2">
+          <div class="hidden sm:block">
+            <?xml version="1.0" ?>
+            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
+              class="w-7 bg-white rounded-full p-1 " id="Layer_1" style="enable-background:new 0 0 512 512;"
+              version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
               <path
-                d="M15.31,6.85a1,1,0,0,0,1,1h6.51L6.17,24.5a1,1,0,0,0,1.41,1.41L24.21,9.28v6.46a1,1,0,1,0,2,0v-9a.9.9,0,0,0-.9-.9h-9A1,1,0,0,0,15.31,6.85Z" />
-            </g>
-          </svg></a>
-          <div class="dropdown">
+                d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2  s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3  s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3  c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z" />
+            </svg>
+          </div>
+          <!-- cart icon -->
+          <div class="hidden sm:block">
+            <?xml version="1.0" ?><svg class="w-7 bg-white rounded-full p-1" viewBox="0 0 256 256"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect fill="none" height="256" width="256" />
+              <path d="M184,184H69.8L41.9,30.6A8,8,0,0,0,34.1,24H16" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="8" />
+              <circle cx="80" cy="204" fill="none" r="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="8" />
+              <circle cx="184" cy="204" fill="none" r="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="8" />
+              <path d="M62.5,144H188.1a15.9,15.9,0,0,0,15.7-13.1L216,64H48" fill="none" stroke="#000"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="8" />
+            </svg>
+          </div>
+          <div class="hidden sm:block">
+            <a class="btn rounded-3xl bg-green-400 font-bold ">Book Consult
+              <?xml version="1.0" ?><svg class="w-6 font-bold fill-white bg-black rounded-full p-1" viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg">
+                <title />
+                <g data-name="Layer 2" id="Layer_2">
+                  <path
+                    d="M15.31,6.85a1,1,0,0,0,1,1h6.51L6.17,24.5a1,1,0,0,0,1.41,1.41L24.21,9.28v6.46a1,1,0,1,0,2,0v-9a.9.9,0,0,0-.9-.9h-9A1,1,0,0,0,15.31,6.85Z" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="dropdown ">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-full p-1 w-8" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
@@ -86,20 +105,30 @@
         </div>
       </div>
     </div>
-    <div>
-      <img class="w-2/5 mt-10 mx-auto" src="./assets/banner.png" alt=""><br>
-      <div class="container mx-auto">
-        <h2 class=" text-6xl font-bold text-center mt-6">A barn house of this design has a striking appearance</h2>
-        <h3 class="text-center my-6 mx-14">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
-        metal accents, and large windows that flood the space with natural light.</h3>
-        <div class="flex justify-center"><button class="btn rounded-3xl bg-green-300 ">View Details <img
-            class="w-7 mr-2  bg-green-400 rounded-full p-1 -rotate-45" src="./assets/right-arrows.png" alt=""> </button>
-          </div>
+    <!-- hero section -->
+    <div class="flex-col">
+      <div class="">
+        <img class="w-3/5 mt-10 mx-auto" src="./assets/banner.png" alt="">
+      </div>
+      <div class="container w-4/5 mx-auto">
+        <h2 class="text-[26px] sm:text-[28px] md:text-[36px] lg:text-[64px] font-bold  text-center mt-6">A barn house of
+          this design has a striking appearance</h2>
+        <h3 class="text-center my-6">The barn house captivates with its blend of rustic charm and modern sophistication,
+          featuring weathered wood, sleek
+          metal accents, and large windows that flood the space with natural light.</h3>
+        <div class="flex justify-center"><button
+            class="btn rounded-3xl bg-green-300 w-full sm:w-full md:w-1/4 lg:w-1/5 p-1">View Details <img
+              class="w-7 mr-2  bg-green-400 rounded-full p-1 -rotate-45" src="./assets/right-arrows.png" alt="">
+          </button>
+        </div>
       </div>
     </div>
   </header>
   <main>
-
+   <!-- About Section -->
+    <div>
+      
+    </div>
   </main>
   <footer>
 
